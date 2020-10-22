@@ -69,7 +69,16 @@ public class Owner extends Person {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner", fetch = FetchType.EAGER)
     private Set<Pet> pets;
 
+    @Column(name = "telephone")
+    private boolean active;
+    
+    public boolean getActive() {
+        return this.active;
+    }
 
+    public void setActive(boolean active) {
+        this.active = active;
+    }
     public String getAddress() {
         return this.address;
     }
