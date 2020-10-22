@@ -166,6 +166,7 @@ public class Owner extends Person {
             .append("address", this.address)
             .append("city", this.city)
             .append("telephone", this.telephone)
+            .append("active", this.active)
             .toString();
     }
 }
